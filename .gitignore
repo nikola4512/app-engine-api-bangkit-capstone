@@ -1,0 +1,6 @@
+# directory
+/node_modules
+
+# file
+package-lock.json
+test.js

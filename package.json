@@ -1,0 +1,21 @@
+{
+  "name": "backend-sign translation",
+  "version": "1.0.0",
+  "description": "backend for sign language translation mobile app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "Nikola Arinanda & Farhan Rizky Gunawan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.2"
+  }
+}
