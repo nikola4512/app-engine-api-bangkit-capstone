@@ -1,16 +1,16 @@
 {
-  "name": "backend-sign translation",
+  "name": "capstone-app-engine",
   "version": "1.0.0",
   "description": "backend for sign language translation mobile app.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon app.js",
-    "start": "node app.js"
+    "start:dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Nikola Arinanda & Farhan Rizky Gunawan",
   "license": "ISC",
   "dependencies": {
+    "crypto": "^1.0.1",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",

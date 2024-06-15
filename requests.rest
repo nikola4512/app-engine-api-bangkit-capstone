@@ -1,0 +1,84 @@
+GET http://localhost:5000/
+
+###
+
+GET http://localhost:5000/material/relations
+
+###
+
+GET http://localhost:5000/material/relations/ayah
+
+###
+GET http://localhost:5000/material/alphabet
+
+###
+
+GET http://localhost:5000/material/alphabet/a
+
+###
+
+GET http://localhost:5000/quiz/relations?count=5
+
+###
+
+POST http://localhost:5000/quiz/relations
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "id": 1,
+            "answer": "Adik"
+        },
+        {
+            "id": 2,
+            "answer": "Ibu"
+        },
+        {
+            "id": 3,
+            "answer": "Bibi"
+        },
+        {
+            "id": 4,
+            "answer": "Saudara"
+        },
+        {
+            "id": 5,
+            "answer": "Kakak"
+        }
+    ]
+}
+
+###
+
+GET http://localhost:5000/quiz/alphabet?count=5
+
+###
+
+POST http://localhost:5000/quiz/alphabet
+Content-Type: application/json
+
+{
+    "data": [
+        {
+            "id": 23,
+            "answer": "W"
+        },
+        {
+            "id": 24,
+            "answer": "Z"
+        },
+        {
+            "id": 15,
+            "answer": "O"
+        },
+        {
+            "id": 5,
+            "answer": "E"
+        },
+        {
+            "id": 11,
+            "answer": "K"
+        }
+    ]
+}
