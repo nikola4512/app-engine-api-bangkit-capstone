@@ -5,10 +5,9 @@ API to deploy on App Engine with feature such GET learning material (all per sec
 
 ## How to run the code
 1. Install nodejs and npm
-2. Initialize npm
-3. Run command
+2. Run command
    ```sh
    npm i
-5. Run command
+3. Run command
    ```sh
    npm run start
