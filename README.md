@@ -12,4 +12,3 @@ API to deploy on App Engine with feature such GET learning material (all per sec
 5. Run command
    ```sh
    npm run start
-7. ggg
