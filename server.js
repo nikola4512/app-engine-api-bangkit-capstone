@@ -1,10 +1,16 @@
 const { dbMaterial } = require("./utils/db-connect.js");
 const { getQuiz, getQuizResult } = require("./utils/quiz.js");
+const fs = require("fs");
+const YAML = require("yaml");
+const swaggerUi = require("swagger-ui-express");
 const express = require("express");
 
 const app = express();
 app.use(express.json());
-const port = 5000;
+const port = process.env.PORT || 3000;
+
+const swaggerSpec = YAML.parse(fs.readFileSync("doc.yaml", "utf8"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.get("/", async (req, res) => {
   res.json({ text: "Hello all! using another url for services" });

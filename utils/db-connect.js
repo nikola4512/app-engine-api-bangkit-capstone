@@ -14,20 +14,6 @@ const dbQuiz = mysql.createConnection({
   password: "capstone123",
 });
 
-// const dbMaterial = mysql.createConnection({
-//   host: "localhost",
-//   database: "sibi_material",
-//   user: "root",
-//   password: "",
-// });
-
-// const dbQuiz = mysql.createConnection({
-//   host: "localhost",
-//   database: "sibi_quiz",
-//   user: "root",
-//   password: "",
-// });
-
 module.exports = {
   dbMaterial,
   dbQuiz,
